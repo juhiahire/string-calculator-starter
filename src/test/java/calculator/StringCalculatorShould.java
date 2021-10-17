@@ -28,10 +28,15 @@ class StringCalculatorShould {
 //			  assertEquals("Number expected but End of file is //found.", given("2,3,4.2,"));
 //			  }
 
-	 @Test public void return_correct_sum_when_custom_delimiter_is_used() {
-			  assertEquals("3", given("//;\n1;2")); assertEquals("3", given("//|\n1|2"));
-			  assertEquals("8", given("//@@\n1@@2@@5")); assertEquals("5",
-			  given("//sep\n2sep3")); }
+//	 @Test public void return_correct_sum_when_custom_delimiter_is_used() {
+//			  assertEquals("3", given("//;\n1;2")); assertEquals("3", //given("//|\n1|2"));
+//			  assertEquals("8", given("//@@\n1@@2@@5")); //assertEquals("5",
+//			  given("//sep\n2sep3")); }
 
+	
+	  @Test public void
+			  return_string_of_negative_numbers_when_negative_numbers_are_used_as_input() {
+			  assertEquals("Negative values are not allowed: -1", given("-1,2"));
+			  assertEquals("Negative values are not allowed: -4,-5", given("2,-4,-5")); }
 
 }
