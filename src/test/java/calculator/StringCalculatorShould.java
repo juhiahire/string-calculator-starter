@@ -34,9 +34,14 @@ class StringCalculatorShould {
 //			  given("//sep\n2sep3")); }
 
 	
-	  @Test public void
-			  return_string_of_negative_numbers_when_negative_numbers_are_used_as_input() {
-			  assertEquals("Negative values are not allowed: -1", given("-1,2"));
-			  assertEquals("Negative values are not allowed: -4,-5", given("2,-4,-5")); }
+//	  @Test public void
+//			  //return_string_of_negative_numbers_when_negative_numbers_are_used_as_input() {
+//			  assertEquals("Negative values are not allowed: -1", //given("-1,2"));
+//			  assertEquals("Negative values are not allowed: -4,-5", //given("2,-4,-5")); }
 
+
+	 private String given(String number) {
+        StringCalculator stringCalculator = new StringCalculator();
+        return stringCalculator.sum(number);
+    }
 }
